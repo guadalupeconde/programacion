@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Medio de transporte adecuado</title>
+    
+
+</head>
+
+<body>
+    <script>
+        metro = parseInt(prompt('Ingrese metros que faltan para llegar:', ''));
+
+        if (metro >= 0 && metro <= 1000) { 
+            document.write('podemos llegar a pie.');
+        } else if (metro > 1000 && metro <= 10000) {
+            document.write('se aconseja ir en bicicleta.');
+        } else if (metro > 10000 && metro <= 300000) {
+            document.write('se debe tomar el colectivo para llegar.');
+        } else if (metro > 30000 && metro <= 1000000) {
+            document.write('en auto es la movilidad mas rapida.');
+        } else if (metro > 1000000) {
+            document.write('solo se puede llegar en avion.');
+        }
+    </script>
+
+
+</body>
+
+</html>
